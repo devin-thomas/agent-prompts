@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent Prompts — Social preview</title>
+    <style>
+      @font-face {
+        font-family: 'Geist Variable';
+        src: url('/fonts/geist-latin.woff2') format('woff2');
+        font-weight: 100 900;
+        font-display: swap;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        padding: 42px 48px;
+        background: #161616;
+        color: #f0efeb;
+        font-family: 'Geist Variable', sans-serif;
+      }
+      header,
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header {
+        border-bottom: 1px solid #414141;
+        padding-bottom: 23px;
+      }
+      .brand {
+        font-size: 29px;
+        font-weight: 650;
+        letter-spacing: -1.3px;
+      }
+      .edition {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: #aaa9a5;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 47px;
+        align-items: center;
+        margin: 43px 0;
+      }
+      h1 {
+        font-size: 78px;
+        font-weight: 500;
+        letter-spacing: -4.8px;
+        line-height: 1.02;
+        margin: 0 0 25px;
+      }
+      h1 span {
+        color: #c9b4f2;
+      }
+      .intro {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #b8b7b1;
+        margin: 0;
+        max-width: 420px;
+      }
+      .record {
+        padding: 27px;
+        border: 1px solid #617d68;
+        border-radius: 18px;
+        background: #222e26;
+      }
+      .record small {
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: #b9d4c0;
+      }
+      h2 {
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 1.07;
+        letter-spacing: -1.5px;
+        margin: 25px 0;
+      }
+      .checkpoint {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 14px 0;
+        border-top: 1px solid #49614e;
+        color: #d0ded3;
+      }
+      .checkpoint strong {
+        display: block;
+        font-size: 11px;
+        margin-bottom: 5px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        color: #a7c3af;
+      }
+      footer {
+        padding-top: 25px;
+        border-top: 1px solid #414141;
+      }
+      .agents {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+      }
+      .agents span {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        font-size: 15px;
+      }
+      .agents img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
+        object-fit: contain;
+      }
+      .url {
+        font-size: 13px;
+        color: #aaa9a5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="brand">agent prompts</span
+      ><span class="edition">SEVEN WAYS TO HAND IT OFF</span>
+    </header>
+    <main>
+      <div>
+        <h1>Know your agent.<br /><span>Then copy once.</span></h1>
+        <p class="intro">
+          A useful next step, from the first task to the next chapter.
+        </p>
+      </div>
+      <div class="record">
+        <small>THE NEXT CHAPTER</small>
+        <h2>Continue<br />this project.</h2>
+        <div class="checkpoint">
+          <strong>LAST CHECKPOINT</strong>Read the current handoff.
+        </div>
+        <div class="checkpoint">
+          <strong>NEXT STEP</strong>Verify. Continue. Leave a handoff.
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="agents">
+        <span><img src="/brands/claude.svg" alt="" />Claude Code</span
+        ><span><img src="/brands/codex.svg" alt="" />Codex</span
+        ><span><img src="/brands/cursor.svg" alt="" />Cursor</span>
+      </div>
+      <span class="url">agent-prompts.vercel.app</span>
+    </footer>
+  </body>
+</html>

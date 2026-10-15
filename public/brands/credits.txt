@@ -1,0 +1,8 @@
+Agent Prompts uses product artwork to identify the referenced services. Trademarks remain with their owners; inclusion does not imply endorsement.
+
+Claude Code, Codex, Cursor, Cloudflare: LobeHub Icons 1.95.1, MIT. Source: https://github.com/lobehub/lobe-icons
+Resend, Mintlify, X: Simple Icons 16.35.0, CC0. Source: https://simpleicons.org
+Arg: public favicon from https://arg.ai/favicon-32x32.png, used to identify the cited site.
+Geist Variable: Fontsource 5.3.0, Geist Project Authors, SIL Open Font License 1.1. Source: https://github.com/vercel/geist-font
+
+License notices are retained beside the artwork and font assets.

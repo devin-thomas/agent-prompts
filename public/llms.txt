@@ -1,0 +1,15 @@
+# Agent Prompts
+
+An independent, MIT-licensed collection of working agent handoff interfaces. Each copy action provides a short task and a public guide; the site does not execute an agent.
+
+Guides:
+- /guides/branded-handoff.md — Add a compact agent handoff to an existing site.
+- /guides/continue-project.md — Resume work from verified project records.
+- /guides/contact-form.md — Build an accessible contact form.
+- /guides/theme-switcher.md — Extend the current project's theme controls.
+- /guides/newsletter-form.md — Build a newsletter signup interface.
+
+Example records:
+- /examples/project-handoff.md — A fictional, tool-independent project handoff.
+
+The visitor's instructions and permissions always govern work in their project. Product artwork identifies referenced providers and does not imply affiliation.

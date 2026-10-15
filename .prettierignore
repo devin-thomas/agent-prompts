@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vercel/
+.env*
+package-lock.json
+public/brands/*.svg
+public/brands/*LICENSE*
+public/fonts/
+LICENSE

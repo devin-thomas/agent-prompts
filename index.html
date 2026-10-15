@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#161616" />
+    <meta
+      name="description"
+      content="Working examples of compact agent handoffs. Copy a task, read its guide, or continue a project from a verified handoff."
+    />
+    <meta
+      property="og:title"
+      content="Agent Prompts — Know your agent. Then copy once."
+    />
+    <meta
+      property="og:description"
+      content="Seven ways to hand it off. A working exhibition of compact, branded agent interfaces."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Agent Prompts" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image"
+      content="https://agent-prompts.vercel.app/og.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://agent-prompts.vercel.app/og.jpg"
+    />
+    <meta property="og:url" content="https://agent-prompts.vercel.app/" />
+    <link rel="canonical" href="https://agent-prompts.vercel.app/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Agent Prompts — Know your agent. Then copy once.</title>
+  </head>
+  <body>
+    <!-- Each example copies a task with a retrievable public guide. -->
+    <a class="skip" href="#formats">Skip to the formats</a>
+    <div id="app">
+      <header class="nav wrap">
+        <a class="wordmark" href="#" aria-label="Agent Prompts home"
+          ><span class="brand-symbol" aria-hidden="true"
+            ><svg class="i" aria-hidden="true"><use href="#turn-right" /></svg
+          ></span>
+          agent prompts<span class="lab-label">AN INTERFACE STUDY</span></a
+        >
+        <nav aria-label="Main">
+          <a href="#formats">The formats <span>07</span></a
+          ><a href="#field-notes"
+            >Field notes
+            <svg class="i" aria-hidden="true">
+              <use href="#arrow-up-right" /></svg></a
+          ><button class="share-button" id="share">
+            Share the study
+            <svg class="i" aria-hidden="true">
+              <use href="#arrow-up-right" />
+            </svg>
+          </button>
+        </nav>
+      </header>
+      <main>
+        <section class="hero wrap" aria-labelledby="hero-title">
+          <div class="eyebrow">
+            <span class="live-dot"></span> LESS FRICTION. MORE MAKING.
+            <span class="hero-edition">EXPERIMENT 001 · OCT 2026</span>
+          </div>
+          <div class="hero-main">
+            <h1 id="hero-title">
+              Know your agent.<br /><span>Then copy once.</span>
+            </h1>
+            <aside class="hero-note">
+              <span class="tiny">A REAL-WORLD REFERENCE</span>
+              <div class="measurement">14<span>words.</span></div>
+              <p>That’s all Cloudflare needs<br />to start the handoff.</p>
+              <a
+                href="https://developers.cloudflare.com/agent-setup/"
+                target="_blank"
+                rel="noreferrer"
+                >See the original
+                <svg class="i" aria-hidden="true">
+                  <use href="#arrow-up-right" /></svg
+              ></a>
+              <div class="note-rule"></div>
+            </aside>
+          </div>
+          <div
+            class="hero-handoff"
+            aria-label="Use this reference to build a branded agent prompt on your site"
+          >
+            <div class="hero-handoff-text">
+              <strong>A familiar agent. A useful next step.</strong>
+              <p>
+                Give your visitor a short prompt and a clear destination. Start
+                with the agent they already recognize.
+              </p>
+              <a
+                class="hero-guide"
+                href="/guides/branded-handoff.md"
+                target="_blank"
+                rel="noreferrer"
+                >Read the build guide
+                <svg class="i" aria-hidden="true">
+                  <use href="#arrow-up-right" /></svg
+              ></a>
+            </div>
+            <div class="hero-handoff-action">
+              <button
+                class="hero-copy"
+                data-copy="reference"
+                aria-label="Copy prompt to build a branded agent handoff on your site"
+              >
+                <span class="hero-logo-cluster" aria-hidden="true"
+                  ><img src="/brands/claude.svg" alt="" /><img
+                    src="/brands/codex.svg"
+                    alt="" /><img src="/brands/cursor.svg" alt="" /></span
+                ><span class="copy-label">Copy build brief</span
+                ><svg class="i" aria-hidden="true">
+                  <use href="#copy" />
+                </svg></button
+              ><span class="hero-agent-names"
+                >Claude Code · Codex · Cursor</span
+              >
+            </div>
+          </div>
+          <div class="hero-bottom">
+            <p>
+              Choose the agent you recognize. Copy a short prompt.<br
+                class="desktop-break"
+              />
+              The full instructions wait in a readable guide.<br /><a
+                class="continuation-entry"
+                href="#format-07"
+                >Already started? Continue your project.</a
+              >
+            </p>
+            <a class="explore-link" href="#formats"
+              >Seven formats. Try them all.<svg class="i" aria-hidden="true">
+                <use href="#arrow-down-left" /></svg
+            ></a>
+          </div>
+        </section>
+        <div class="agent-strip wrap">
+          <span class="tiny">MADE FOR THE AGENT YOU ALREADY USE</span>
+          <div class="agent-strip-brands">
+            <span><img src="/brands/claude.svg" alt="" />Claude Code</span
+            ><span><img src="/brands/codex.svg" alt="" />Codex</span
+            ><span><img src="/brands/cursor.svg" alt="" />Cursor</span>
+          </div>
+          <span class="strip-end">ONE CLICK. ONE GOOD START.</span>
+        </div>
+        <section
+          class="formats wrap"
+          id="formats"
+          aria-labelledby="formats-title"
+        >
+          <div class="section-heading">
+            <div>
+              <span class="tiny section-kicker">THE PLAYGROUND</span>
+              <h2 id="formats-title">
+                Seven ways to hand it off<span class="orange">.</span>
+              </h2>
+            </div>
+            <div class="filters" role="group" aria-label="Filter formats">
+              <button class="active" data-filter="all" aria-pressed="true">
+                All seven <span>07</span></button
+              ><button data-filter="copy" aria-pressed="false">Copy</button
+              ><button data-filter="launch" aria-pressed="false">Launch</button>
+            </div>
+          </div>
+          <p
+            class="sr-only"
+            id="filter-status"
+            role="status"
+            aria-live="polite"
+          >
+            7 examples shown.
+          </p>
+          <div class="gallery" id="gallery">
+            <article class="exhibit" data-kind="copy" id="format-01">
+              <div class="scene cream">
+                <div class="scene-top">
+                  <span class="tiny">THE UNIVERSAL HANDOFF</span
+                  ><span class="specimen-num">01</span>
+                </div>
+                <span class="cream-symbol" aria-hidden="true"></span>
+                <h3>Big things.<br />Small beginnings.</h3>
+                <button
+                  class="pill-copy"
+                  data-copy="contact"
+                  aria-label="Copy contact form prompt for Claude Code, Codex, or Cursor"
+                >
+                  <span class="logo-cluster" aria-hidden="true"
+                    ><img src="/brands/claude.svg" alt="" /><img
+                      src="/brands/codex.svg"
+                      alt="" /><img src="/brands/cursor.svg" alt="" /></span
+                  ><span class="copy-label">Copy prompt</span
+                  ><svg class="i" aria-hidden="true">
+                    <use href="#copy" />
+                  </svg></button
+                ><span class="scene-hint"
+                  >One prompt. Your favorite agent.</span
+                >
+              </div>
+              <div class="caption">
+                <div>
+                  <h3>The familiar face</h3>
+                  <p>Recognition before explanation.</p>
+                </div>
+                <button
+                  class="inspect"
+                  data-inspect="contact"
+                  aria-label="View prompt for The familiar face"
+                >
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="exhibit" data-kind="copy" id="format-02">
+              <div class="scene lilac">
+                <div class="scene-top">
+                  <span class="tiny">A LITTLE PERSONAL PREFERENCE</span
+                  ><span class="specimen-num">02</span>
+                </div>
+                <h3>Your agent.<br />Your way.</h3>
+                <div
+                  class="agent-options"
+                  role="group"
+                  aria-label="Choose your agent"
+                >
+                  <button
+                    data-agent="Claude Code"
+                    aria-pressed="true"
+                    class="agent-option selected"
+                  >
+                    <img src="/brands/claude.svg" alt="" /><span
+                      >Claude Code</span
+                    ><span class="radio-dot"></span></button
+                  ><button
+                    data-agent="Codex"
+                    aria-pressed="false"
+                    class="agent-option"
+                  >
+                    <img src="/brands/codex.svg" alt="" /><span>Codex</span
+                    ><span class="radio-dot"></span></button
+                  ><button
+                    data-agent="Cursor"
+                    aria-pressed="false"
+                    class="agent-option"
+                  >
+                    <img src="/brands/cursor.svg" alt="" /><span>Cursor</span
+                    ><span class="radio-dot"></span>
+                  </button>
+                </div>
+                <button class="picker-copy" data-copy="theme">
+                  <span class="copy-label"
+                    >Copy for <span id="selected-agent">Claude Code</span></span
+                  ><svg class="i" aria-hidden="true">
+                    <use href="#arrow-right" />
+                  </svg>
+                </button>
+              </div>
+              <div class="caption">
+                <div>
+                  <h3>The personal invitation</h3>
+                  <p>A name, a mark, a clear choice.</p>
+                </div>
+                <button
+                  class="inspect"
+                  data-inspect="theme"
+                  aria-label="View prompt for The personal invitation"
+                >
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="exhibit" data-kind="copy" id="format-03">
+              <div class="scene sky">
+                <div class="scene-top">
+                  <span class="tiny">RIGHT WHERE YOU NEED IT</span
+                  ><span class="specimen-num">03</span>
+                </div>
+                <div class="mini-app">
+                  <div class="mini-toolbar">
+                    <span class="window-dots" aria-hidden="true"
+                      ><i></i><i></i><i></i></span
+                    ><span>newsletter.form</span
+                    ><svg class="i" aria-hidden="true">
+                      <use href="#check" />
+                    </svg>
+                  </div>
+                  <div class="mini-form">
+                    <span class="mini-badge">THE OCCASIONAL EMAIL</span>
+                    <h3>Good things.<br />In your inbox.</h3>
+                    <div class="mock-input">
+                      you@somewhere.nice <span>Enter</span>
+                    </div>
+                    <div class="mock-submit">
+                      Keep me in the loop
+                      <svg class="i" aria-hidden="true">
+                        <use href="#arrow-up-right" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="context-action">
+                  <span><span class="ready-dot"></span> Make it yours</span
+                  ><button
+                    data-copy="newsletter"
+                    aria-label="Copy newsletter prompt for Cursor"
+                  >
+                    <img src="/brands/cursor.svg" alt="" /><span
+                      class="copy-label"
+                      >Copy for Cursor</span
+                    ><svg class="i" aria-hidden="true">
+                      <use href="#copy" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="caption">
+                <div>
+                  <h3>The perfect moment</h3>
+                  <p>The next step lives beside the work.</p>
+                </div>
+                <button
+                  class="inspect"
+                  data-inspect="newsletter"
+                  aria-label="View prompt for The perfect moment"
+                >
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="exhibit" data-kind="copy" id="format-04">
+              <div class="scene terminal">
+                <div class="scene-top">
+                  <span class="tiny">FOR THE KEYBOARD PEOPLE</span
+                  ><span class="specimen-num">04</span>
+                </div>
+                <div class="terminal-intro">
+                  <span class="terminal-caret">&gt;_</span>
+                  <h3>Less ceremony.<br />More momentum.</h3>
+                </div>
+                <button class="palette-preview" id="open-palette">
+                  <span class="palette-search"
+                    ><svg class="i" aria-hidden="true">
+                      <use href="#search" />
+                    </svg>
+                    What do you want to make? <kbd>Cmd K</kbd></span
+                  ><span class="palette-result"
+                    ><img src="/brands/claude.svg" alt="" />Add a contact form
+                    <span>Enter</span></span
+                  ><span class="palette-preview-footer"
+                    >A small action. A clear destination.</span
+                  >
+                </button>
+              </div>
+              <div class="caption">
+                <div>
+                  <h3>The quick command</h3>
+                  <p>One shortcut from intention to action.</p>
+                </div>
+                <button
+                  class="inspect"
+                  data-inspect="contact"
+                  aria-label="View prompt for The quick command"
+                >
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="exhibit" data-kind="copy" id="format-05">
+              <div class="scene orange-scene">
+                <div class="scene-top">
+                  <span class="tiny">THE PROMPT IS THE POINTER</span
+                  ><span class="specimen-num">05</span>
+                </div>
+                <div class="big-one">1</div>
+                <h3>sentence.<br />A whole lot behind it.</h3>
+                <button class="line-copy" data-copy="contact">
+                  <span class="copy-label">Read the guide. Build the form.</span
+                  ><svg class="i" aria-hidden="true">
+                    <use href="#copy" />
+                  </svg></button
+                ><a
+                  class="guide-link"
+                  href="/guides/contact-form.md"
+                  target="_blank"
+                  rel="noreferrer"
+                  >See what’s behind the prompt
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" /></svg
+                ></a>
+              </div>
+              <div class="caption">
+                <div>
+                  <h3>The tiny starting point</h3>
+                  <p>Keep the directions. Lose the wall.</p>
+                </div>
+                <button
+                  class="inspect"
+                  data-inspect="contact"
+                  aria-label="View prompt for The tiny starting point"
+                >
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="exhibit" data-kind="launch" id="format-06">
+              <div class="scene midnight">
+                <div class="scene-top">
+                  <span class="tiny">FROM THIS TAB TO YOUR TOOL</span
+                  ><span class="specimen-num">06</span>
+                </div>
+                <div class="orbit" aria-hidden="true">
+                  <span></span><span></span>
+                  <div class="cursor-object">
+                    <img src="/brands/cursor.svg" alt="" />
+                  </div>
+                  <i class="orbit-dot"></i>
+                </div>
+                <div class="launch-content">
+                  <h3>Your next move.</h3>
+                  <div class="launch-actions">
+                    <a
+                      id="cursor-launch"
+                      class="cursor-launch"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><img src="/brands/cursor.svg" alt="" />Open in Cursor<svg
+                        class="i"
+                        aria-hidden="true"
+                      >
+                        <use href="#arrow-up-right" /></svg></a
+                    ><button
+                      class="launch-copy"
+                      data-copy="contact"
+                      aria-label="Copy prompt instead"
+                    >
+                      <svg class="i" aria-hidden="true">
+                        <use href="#copy" />
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="scene-hint"
+                    >Opens a draft. You decide when to run.</span
+                  >
+                </div>
+              </div>
+              <div class="caption">
+                <div>
+                  <h3>The direct route</h3>
+                  <p>A familiar tool. One less step.</p>
+                </div>
+                <button
+                  class="inspect"
+                  data-inspect="contact"
+                  aria-label="View prompt for The direct route"
+                >
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article
+              class="exhibit continuation-exhibit"
+              data-kind="copy"
+              id="format-07"
+            >
+              <div class="scene continuation">
+                <div class="continuation-copy">
+                  <div class="scene-top">
+                    <span class="tiny">PICK UP WHERE YOU LEFT OFF</span
+                    ><span class="specimen-num">07</span>
+                  </div>
+                  <h3>Continue this project.</h3>
+                  <p>New chat. Different agent. Same next step.</p>
+                  <p class="continuation-description">
+                    A short prompt reconnects your agent with the project's
+                    current handoff. Verify what changed, continue the next
+                    task, and leave a clear place to resume.
+                  </p>
+                  <button
+                    class="hero-copy continuation-button"
+                    data-copy="continue"
+                    aria-label="Copy continuation prompt for Claude Code, Codex, or Cursor"
+                  >
+                    <span class="hero-logo-cluster" aria-hidden="true"
+                      ><img src="/brands/claude.svg" alt="" /><img
+                        src="/brands/codex.svg"
+                        alt="" /><img src="/brands/cursor.svg" alt="" /></span
+                    ><span class="copy-label">Continue this project</span
+                    ><svg class="i" aria-hidden="true">
+                      <use href="#copy" />
+                    </svg>
+                  </button>
+                  <span class="hero-agent-names"
+                    >Claude Code · Codex · Cursor</span
+                  >
+                </div>
+                <div
+                  class="continuation-record"
+                  aria-label="Fictional project handoff example"
+                >
+                  <div class="continuation-record-head">
+                    <span class="tiny">EXAMPLE HANDOFF</span
+                    ><span class="record-state"
+                      ><span class="ready-dot"></span> Ready to resume</span
+                    >
+                  </div>
+                  <h4>Contact form</h4>
+                  <dl>
+                    <div>
+                      <dt>Last checkpoint</dt>
+                      <dd>Fields and responsive layout in place.</dd>
+                    </div>
+                    <div>
+                      <dt>Next task</dt>
+                      <dd>Add validation and preserve input on errors.</dd>
+                    </div>
+                    <div>
+                      <dt>Verify first</dt>
+                      <dd>Inspect the files. Confirm the current state.</dd>
+                    </div>
+                  </dl>
+                  <a
+                    href="/examples/project-handoff.md"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Read the sample handoff
+                    <svg class="i" aria-hidden="true">
+                      <use href="#arrow-up-right" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="caption">
+                <div>
+                  <h3>The next chapter</h3>
+                  <p>
+                    Your project keeps its place, even when the conversation
+                    changes.
+                  </p>
+                </div>
+                <button
+                  class="inspect"
+                  data-inspect="continue"
+                  aria-label="View prompt for Continue this project"
+                >
+                  <svg class="i" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+          <div class="playground-note">
+            <span class="tiny">YES, THESE WORK.</span>
+            <p>
+              Copy a prompt, inspect it, or open a draft. Each demo points to a
+              short public guide you can read first.
+            </p>
+            <button id="show-payload">
+              What actually gets copied?
+              <svg class="i" aria-hidden="true">
+                <use href="#arrow-up-right" />
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="pointer-section wrap" aria-labelledby="pointer-title">
+          <div class="pointer-heading">
+            <span class="tiny">THE IDEA UNDERNEATH</span>
+            <h2 id="pointer-title">
+              A small invitation.<br /><span>A well-prepared destination.</span>
+            </h2>
+            <p>
+              The button stays small because the instructions<br
+                class="desktop-break"
+              />
+              have somewhere useful to live.
+            </p>
+          </div>
+          <div
+            class="handoff-diagram"
+            aria-label="A human copies a short prompt, which points an agent to a guide"
+          >
+            <div class="diagram-node">
+              <span class="diagram-visual human-visual" aria-hidden="true"
+                ><svg viewBox="0 0 64 64">
+                  <circle cx="32" cy="21" r="10" />
+                  <path
+                    d="M12 56v-4c0-11 9-18 20-18s20 7 20 18v4"
+                  /></svg></span
+              ><span>You</span><small>A clear intention</small>
+            </div>
+            <svg class="i diagram-arrow" aria-hidden="true">
+              <use href="#arrow-right" /></svg
+            ><button class="diagram-node" data-inspect="contact">
+              <span class="diagram-visual prompt-visual"
+                ><svg class="i" aria-hidden="true">
+                  <use href="#turn-right" /></svg></span
+              ><span>The prompt</span
+              ><small id="diagram-chars">A few words</small></button
+            ><svg class="i diagram-arrow" aria-hidden="true">
+              <use href="#arrow-right" /></svg
+            ><a
+              class="diagram-node"
+              href="/guides/contact-form.md"
+              target="_blank"
+              rel="noreferrer"
+              ><span class="diagram-visual guide-visual"
+                ><span>GUIDE.md</span><i></i><i></i><i></i></span
+              ><span>The guide</span><small>Context, scope, checks</small></a
+            ><svg class="i diagram-arrow" aria-hidden="true">
+              <use href="#arrow-right" />
+            </svg>
+            <div class="diagram-node">
+              <span class="diagram-visual agents-visual"
+                ><img src="/brands/claude.svg" alt="" /><img
+                  src="/brands/codex.svg"
+                  alt="" /><img src="/brands/cursor.svg" alt="" /></span
+              ><span>Your agent</span><small>Ready to do the work</small>
+            </div>
+          </div>
+        </section>
+        <section
+          class="field-notes wrap"
+          id="field-notes"
+          aria-labelledby="notes-title"
+        >
+          <div class="section-heading">
+            <div>
+              <span class="tiny section-kicker">OBSERVED IN THE WILD</span>
+              <h2 id="notes-title">
+                Small interfaces.<br />Different payloads.
+              </h2>
+            </div>
+            <p class="notes-intro">
+              Four real sites. Four useful lessons.<br />Measured clipboard
+              text, not marketing promises.
+            </p>
+          </div>
+          <div class="research-grid">
+            <a
+              class="research-item"
+              href="https://developers.cloudflare.com/agent-setup/"
+              target="_blank"
+              rel="noreferrer"
+              ><span class="research-brand"
+                ><img src="/brands/cloudflare.svg" alt="" />Cloudflare<svg
+                  class="i"
+                  aria-hidden="true"
+                >
+                  <use href="#arrow-up-right" /></svg
+              ></span>
+              <div class="research-count">135<span>characters</span></div>
+              <span class="research-words">14 WORDS · SETUP PROMPT</span>
+              <p>
+                Recognizable logos. One small button. The full setup lives
+                behind a link.
+              </p>
+              <div class="mini-meter"><i style="width: 1.36%"></i></div></a
+            ><a
+              class="research-item"
+              href="https://arg.ai/for-agents/cursor"
+              target="_blank"
+              rel="noreferrer"
+              ><span class="research-brand"
+                ><img src="/brands/arg.png" alt="" />Arg<svg
+                  class="i"
+                  aria-hidden="true"
+                >
+                  <use href="#arrow-up-right" /></svg
+              ></span>
+              <div class="research-count">31<span>characters</span></div>
+              <span class="research-words">2 WORDS · SETUP PROMPT</span>
+              <p>
+                A tiny fetch instruction. A complete setup guide at the other
+                end.
+              </p>
+              <div class="mini-meter"><i style="width: 0.31%"></i></div></a
+            ><a
+              class="research-item"
+              href="https://resend.com/cursor"
+              target="_blank"
+              rel="noreferrer"
+              ><span class="research-brand"
+                ><img src="/brands/resend.svg" alt="" />Resend<svg
+                  class="i"
+                  aria-hidden="true"
+                >
+                  <use href="#arrow-up-right" /></svg
+              ></span>
+              <div class="research-count">51<span>characters</span></div>
+              <span class="research-words">11 WORDS · FIRST TASK PROMPT</span>
+              <p>
+                A short task, with copy and Cursor launch actions right beside
+                it.
+              </p>
+              <div class="mini-meter"><i style="width: 0.51%"></i></div></a
+            ><a
+              class="research-item"
+              href="https://www.mintlify.com/docs/ai/contextual-menu"
+              target="_blank"
+              rel="noreferrer"
+              ><span class="research-brand"
+                ><img src="/brands/mintlify.svg" alt="" />Mintlify<svg
+                  class="i"
+                  aria-hidden="true"
+                >
+                  <use href="#arrow-up-right" /></svg
+              ></span>
+              <div class="research-count">9,928<span>characters</span></div>
+              <span class="research-words">1,301 WORDS · FULL PAGE EXPORT</span>
+              <p>
+                A compact menu can still copy a lot. “Copy page” and “Copy
+                prompt” do different jobs.
+              </p>
+              <div class="mini-meter full"><i style="width: 100%"></i></div
+            ></a>
+          </div>
+          <div class="research-footnote">
+            <span>OBSERVED OCT 14, 2026</span>
+            <p>
+              These are specific samples, not rankings. Setup prompts and
+              full-page exports serve different purposes. The formats above are
+              independent design studies, not official integrations.
+            </p>
+            <span>SOURCES ABOVE</span>
+          </div>
+        </section>
+        <section class="closing wrap">
+          <h2>Give the work<br />a good beginning.</h2>
+          <a href="#formats"
+            >Find your favorite format
+            <svg class="i" aria-hidden="true"><use href="#arrow-up" /></svg
+          ></a>
+        </section>
+      </main>
+      <footer class="wrap">
+        <a class="wordmark" href="#" aria-label="Agent Prompts home"
+          >agent prompts</a
+        ><span>An independent collection of agent handoffs.</span
+        ><span
+          ><a href="https://github.com/devin-thomas/agent-prompts">Source</a> ·
+          <a href="/LICENSE.txt">MIT licensed</a></span
+        >
+      </footer>
+    </div>
+    <div class="toast" role="status" aria-live="polite" id="toast"></div>
+    <dialog
+      id="prompt-dialog"
+      class="prompt-dialog"
+      aria-labelledby="prompt-title"
+      aria-describedby="prompt-description"
+    >
+      <div class="dialog-head">
+        <span class="tiny">THE WHOLE PROMPT</span
+        ><button class="close-dialog icon-button" aria-label="Close prompt">
+          <svg class="i" aria-hidden="true"><use href="#close" /></svg>
+        </button>
+      </div>
+      <h2 id="prompt-title">A small starting point.</h2>
+      <p class="dialog-description" id="prompt-description">
+        This is exactly what goes on your clipboard.
+      </p>
+      <textarea
+        id="prompt-text"
+        readonly
+        aria-label="Complete prompt text"
+      ></textarea>
+      <div class="prompt-metrics">
+        <span id="prompt-count"></span
+        ><a id="prompt-guide" target="_blank" rel="noreferrer"
+          >Read the guide
+          <svg class="i" aria-hidden="true"><use href="#arrow-up-right" /></svg
+        ></a>
+      </div>
+      <div class="dialog-actions">
+        <span class="manual-hint" id="manual-hint"
+          >Paste into your agent, in your project.</span
+        ><button class="dialog-copy" id="dialog-copy">
+          <span class="copy-label">Copy prompt</span
+          ><svg class="i" aria-hidden="true"><use href="#copy" /></svg>
+        </button>
+      </div>
+      <p
+        class="dialog-status"
+        id="dialog-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </dialog>
+    <dialog
+      id="palette-dialog"
+      class="palette-dialog"
+      aria-label="Find a prompt"
+    >
+      <div class="palette-dialog-head">
+        <svg class="i" aria-hidden="true"><use href="#search" /></svg
+        ><input
+          id="palette-query"
+          aria-label="Search prompts"
+          aria-controls="palette-results"
+          placeholder="What do you want to make?"
+          autocomplete="off"
+        /><button class="close-palette" aria-label="Close command palette">
+          <kbd>ESC</kbd>
+        </button>
+      </div>
+      <div
+        id="palette-results"
+        role="group"
+        aria-label="Matching prompts"
+      ></div>
+      <div class="palette-foot">
+        <span>Arrow keys to choose</span><span>Enter to copy</span
+        ><span>Short prompts. Real guides.</span>
+      </div>
+    </dialog>
+    <dialog
+      id="share-dialog"
+      class="prompt-dialog"
+      aria-labelledby="share-title"
+    >
+      <div class="dialog-head">
+        <span class="tiny">SHARE THE COLLECTION</span
+        ><button
+          class="close-share icon-button"
+          aria-label="Close share dialog"
+        >
+          <svg class="i" aria-hidden="true"><use href="#close" /></svg>
+        </button>
+      </div>
+      <h2 id="share-title">Share Agent Prompts</h2>
+      <textarea
+        id="share-text"
+        readonly
+        aria-label="Agent Prompts link"
+      ></textarea>
+      <div class="share-actions">
+        <button id="share-copy" class="dialog-copy">Copy link</button>
+      </div>
+      <p
+        id="share-status"
+        class="dialog-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </dialog>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-defs" aria-hidden="true">
+      <symbol id="arrow-up-right" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M6 6h12v12" />
+      </symbol>
+      <symbol id="arrow-down-left" viewBox="0 0 24 24">
+        <path d="M18 6 6 18M6 6v12h12" />
+      </symbol>
+      <symbol id="arrow-up" viewBox="0 0 24 24">
+        <path d="M12 20V4m-6 6 6-6 6 6" />
+      </symbol>
+      <symbol id="turn-right" viewBox="0 0 24 24">
+        <path d="M5 3v10a4 4 0 0 0 4 4h10m-5-5 5 5-5 5" />
+      </symbol>
+      <symbol id="arrow-right" viewBox="0 0 24 24">
+        <path d="M4 12h16m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="copy" viewBox="0 0 24 24">
+        <rect x="8" y="8" width="12" height="12" rx="2" />
+        <path d="M16 8V4H4v12h4" />
+      </symbol>
+      <symbol id="check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="search" viewBox="0 0 24 24">
+        <circle cx="10.5" cy="10.5" r="6.5" />
+        <path d="m16 16 5 5" />
+      </symbol>
+      <symbol id="close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M6 18 18 6" />
+      </symbol>
+    </svg>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
