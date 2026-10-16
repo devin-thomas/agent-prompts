@@ -2870,3 +2870,7 @@ footer > span:last-child a {
   min-height: 36px;
   align-items: center;
 }
+
+.dialog-head > .icon-button {
+  margin-left: auto;
+}

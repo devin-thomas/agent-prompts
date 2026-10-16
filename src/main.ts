@@ -102,8 +102,8 @@ function inspect(id: TaskId, manual = false): void {
   resetCopyFeedback($<HTMLButtonElement>('#dialog-copy'));
   $('#dialog-status').textContent = '';
   $('#manual-hint').textContent = manual
-    ? 'Clipboard unavailable. Select the prompt and copy it manually.'
-    : 'Paste into your agent, in your project.';
+    ? 'Copy the selected text manually.'
+    : 'Paste into your coding agent.';
   if (!dialog.open) dialog.showModal();
   if (manual) {
     const textArea = $<HTMLTextAreaElement>('#prompt-text');
@@ -122,9 +122,9 @@ async function copy(id: TaskId, button?: HTMLButtonElement): Promise<boolean> {
     if (!navigator.clipboard?.writeText)
       throw new Error('Clipboard unavailable');
     await navigator.clipboard.writeText(promptFor(id));
-    announce('Prompt copied. Continue in your agent.');
+    announce('Prompt copied.');
     if (label?.dataset.copyToken === token) {
-      label.textContent = 'Copied!';
+      label.textContent = 'Copied';
       setTimeout(() => {
         if (label.dataset.copyToken !== token) return;
         resetCopyFeedback(button);
@@ -134,9 +134,7 @@ async function copy(id: TaskId, button?: HTMLButtonElement): Promise<boolean> {
   } catch {
     if (label?.dataset.copyToken === token) resetCopyFeedback(button);
     inspect(id, true);
-    announce(
-      'Clipboard unavailable. The prompt is selected for manual copying.',
-    );
+    announce('Couldn’t access the clipboard.');
     return false;
   } finally {
     if (button) button.disabled = false;
@@ -330,7 +328,8 @@ document.addEventListener('keydown', (event) => {
 const shareUrl = new URL('/', location.href).href;
 function showShareFallback(): void {
   $<HTMLTextAreaElement>('#share-text').value = shareUrl;
-  $('#share-status').textContent = 'Select and copy this link.';
+  $('#share-status').textContent =
+    'Use Cmd or Ctrl + C to copy the selected link.';
   if (!shareDialog.open) shareDialog.showModal();
   const textArea = $<HTMLTextAreaElement>('#share-text');
   textArea.focus();

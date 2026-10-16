@@ -1,20 +1,20 @@
 # Agent Prompts
 
-A small, working collection of interfaces for handing a task to an AI coding agent. Recognizable product marks, a short prompt, and a readable guide help people move from a website into their own project.
+Agent Prompts shows seven ways to add a coding agent prompt to a website. Each example includes a working action and a public task guide.
 
 [Try the live site](https://agent-prompts.vercel.app/) · [Implementation guide](public/guides/branded-handoff.md) · [MIT license](LICENSE)
 
 ## Examples
 
-| Example                 | What it demonstrates                                             |
-| ----------------------- | ---------------------------------------------------------------- |
-| The familiar face       | One shared copy action with named agent products.                |
-| The personal invitation | An agent picker with a clear selected state.                     |
-| The perfect moment      | A prompt beside the work it relates to.                          |
-| The quick command       | Searchable tasks with keyboard navigation.                       |
-| The tiny starting point | One sentence pointing to a complete guide.                       |
-| The direct route        | A Cursor draft link with a copy fallback.                        |
-| Continue this project   | Resume from a verified project handoff, then leave the next one. |
+| Example               | What it demonstrates                                             |
+| --------------------- | ---------------------------------------------------------------- |
+| Shared prompt         | One shared copy action with named agent products.                |
+| Agent picker          | An agent picker with a clear selected state.                     |
+| Contextual prompt     | A prompt beside the work it relates to.                          |
+| Command palette       | Searchable tasks with keyboard navigation.                       |
+| Linked guide          | One sentence pointing to a complete guide.                       |
+| Open in agent         | A Cursor draft link with a copy fallback.                        |
+| Continue this project | Resume from a verified project handoff, then leave the next one. |
 
 The continuation example works with project records already available to the agent. It does not require an account or a particular agent tool. See its [public guide](public/guides/continue-project.md) and [fictional handoff example](public/examples/project-handoff.md).
 
@@ -50,7 +50,7 @@ npm run preview
 
 Copy actions write plain text to your clipboard. If the clipboard is unavailable, the site presents selectable text. The Cursor action opens a draft; it does not execute a task. The form inside the contextual example is an illustration, not a signup form. No example submits personal information or runs an agent.
 
-The field notes are dated observations of public sites, not rankings or promises about their current behavior. Agent Prompts is an independent project and is not endorsed by the referenced providers.
+The references show clipboard samples collected from public sites on a stated date. Agent Prompts is an independent project and is not endorsed by the referenced providers.
 
 ## License and artwork
 

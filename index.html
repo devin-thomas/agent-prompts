@@ -6,15 +6,15 @@
     <meta name="theme-color" content="#161616" />
     <meta
       name="description"
-      content="Working examples of compact agent handoffs. Copy a task, read its guide, or continue a project from a verified handoff."
+      content="Working examples and implementation guides for adding coding agent prompts to a website."
     />
     <meta
       property="og:title"
-      content="Agent Prompts — Know your agent. Then copy once."
+      content="Agent Prompts: examples for coding agents"
     />
     <meta
       property="og:description"
-      content="Seven ways to hand it off. A working exhibition of compact, branded agent interfaces."
+      content="Try prompt buttons, an agent picker, keyboard search, and a project continuation prompt."
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Agent Prompts" />
@@ -23,17 +23,17 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image"
-      content="https://agent-prompts.vercel.app/og.jpg"
+      content="https://agent-prompts.vercel.app/og.jpg?v=1.2.1"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://agent-prompts.vercel.app/og.jpg"
+      content="https://agent-prompts.vercel.app/og.jpg?v=1.2.1"
     />
     <meta property="og:url" content="https://agent-prompts.vercel.app/" />
     <link rel="canonical" href="https://agent-prompts.vercel.app/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Agent Prompts — Know your agent. Then copy once.</title>
+    <title>Agent Prompts: examples for coding agents</title>
   </head>
   <body>
     <!-- Each example copies a task with a retrievable public guide. -->
@@ -44,16 +44,16 @@
           ><span class="brand-symbol" aria-hidden="true"
             ><svg class="i" aria-hidden="true"><use href="#turn-right" /></svg
           ></span>
-          agent prompts<span class="lab-label">AN INTERFACE STUDY</span></a
+          agent prompts<span class="lab-label">INTERFACE EXAMPLES</span></a
         >
         <nav aria-label="Main">
-          <a href="#formats">The formats <span>07</span></a
+          <a href="#formats">Examples <span>07</span></a
           ><a href="#field-notes"
-            >Field notes
+            >References
             <svg class="i" aria-hidden="true">
               <use href="#arrow-up-right" /></svg></a
           ><button class="share-button" id="share">
-            Share the study
+            Share this page
             <svg class="i" aria-hidden="true">
               <use href="#arrow-up-right" />
             </svg>
@@ -62,18 +62,14 @@
       </header>
       <main>
         <section class="hero wrap" aria-labelledby="hero-title">
-          <div class="eyebrow">
-            <span class="live-dot"></span> LESS FRICTION. MORE MAKING.
-            <span class="hero-edition">EXPERIMENT 001 · OCT 2026</span>
-          </div>
           <div class="hero-main">
             <h1 id="hero-title">
-              Know your agent.<br /><span>Then copy once.</span>
+              Add agent prompts<br /><span>to your site.</span>
             </h1>
             <aside class="hero-note">
-              <span class="tiny">A REAL-WORLD REFERENCE</span>
+              <span class="tiny">CLOUDFLARE SETUP PROMPT</span>
               <div class="measurement">14<span>words.</span></div>
-              <p>That’s all Cloudflare needs<br />to start the handoff.</p>
+              <p>The copied prompt points to the full setup guide.</p>
               <a
                 href="https://developers.cloudflare.com/agent-setup/"
                 target="_blank"
@@ -90,10 +86,10 @@
             aria-label="Use this reference to build a branded agent prompt on your site"
           >
             <div class="hero-handoff-text">
-              <strong>A familiar agent. A useful next step.</strong>
+              <strong>Build a prompt button</strong>
               <p>
-                Give your visitor a short prompt and a clear destination. Start
-                with the agent they already recognize.
+                Copy these instructions into your coding agent to add a prompt
+                button to your site.
               </p>
               <a
                 class="hero-guide"
@@ -115,7 +111,7 @@
                   ><img src="/brands/claude.svg" alt="" /><img
                     src="/brands/codex.svg"
                     alt="" /><img src="/brands/cursor.svg" alt="" /></span
-                ><span class="copy-label">Copy build brief</span
+                ><span class="copy-label">Copy build prompt</span
                 ><svg class="i" aria-hidden="true">
                   <use href="#copy" />
                 </svg></button
@@ -125,30 +121,22 @@
             </div>
           </div>
           <div class="hero-bottom">
-            <p>
-              Choose the agent you recognize. Copy a short prompt.<br
-                class="desktop-break"
-              />
-              The full instructions wait in a readable guide.<br /><a
-                class="continuation-entry"
-                href="#format-07"
-                >Already started? Continue your project.</a
-              >
-            </p>
+            <a class="continuation-entry" href="#format-07"
+              >Continue an existing project</a
+            >
             <a class="explore-link" href="#formats"
-              >Seven formats. Try them all.<svg class="i" aria-hidden="true">
+              >Browse the examples<svg class="i" aria-hidden="true">
                 <use href="#arrow-down-left" /></svg
             ></a>
           </div>
         </section>
         <div class="agent-strip wrap">
-          <span class="tiny">MADE FOR THE AGENT YOU ALREADY USE</span>
+          <span class="tiny">PROMPTS FOR</span>
           <div class="agent-strip-brands">
             <span><img src="/brands/claude.svg" alt="" />Claude Code</span
             ><span><img src="/brands/codex.svg" alt="" />Codex</span
             ><span><img src="/brands/cursor.svg" alt="" />Cursor</span>
           </div>
-          <span class="strip-end">ONE CLICK. ONE GOOD START.</span>
         </div>
         <section
           class="formats wrap"
@@ -157,12 +145,9 @@
         >
           <div class="section-heading">
             <div>
-              <span class="tiny section-kicker">THE PLAYGROUND</span>
-              <h2 id="formats-title">
-                Seven ways to hand it off<span class="orange">.</span>
-              </h2>
+              <h2 id="formats-title">Prompt button examples</h2>
             </div>
-            <div class="filters" role="group" aria-label="Filter formats">
+            <div class="filters" role="group" aria-label="Filter examples">
               <button class="active" data-filter="all" aria-pressed="true">
                 All seven <span>07</span></button
               ><button data-filter="copy" aria-pressed="false">Copy</button
@@ -181,11 +166,11 @@
             <article class="exhibit" data-kind="copy" id="format-01">
               <div class="scene cream">
                 <div class="scene-top">
-                  <span class="tiny">THE UNIVERSAL HANDOFF</span
+                  <span class="tiny">SHARED COPY BUTTON</span
                   ><span class="specimen-num">01</span>
                 </div>
                 <span class="cream-symbol" aria-hidden="true"></span>
-                <h3>Big things.<br />Small beginnings.</h3>
+                <h3>Add a<br />contact form</h3>
                 <button
                   class="pill-copy"
                   data-copy="contact"
@@ -200,18 +185,18 @@
                     <use href="#copy" />
                   </svg></button
                 ><span class="scene-hint"
-                  >One prompt. Your favorite agent.</span
+                  >Paste into Claude Code, Codex, or Cursor.</span
                 >
               </div>
               <div class="caption">
                 <div>
-                  <h3>The familiar face</h3>
-                  <p>Recognition before explanation.</p>
+                  <h3>Shared prompt</h3>
+                  <p>One button copies a prompt for any supported agent.</p>
                 </div>
                 <button
                   class="inspect"
                   data-inspect="contact"
-                  aria-label="View prompt for The familiar face"
+                  aria-label="View prompt for Shared prompt"
                 >
                   <svg class="i" aria-hidden="true">
                     <use href="#arrow-up-right" />
@@ -222,10 +207,10 @@
             <article class="exhibit" data-kind="copy" id="format-02">
               <div class="scene lilac">
                 <div class="scene-top">
-                  <span class="tiny">A LITTLE PERSONAL PREFERENCE</span
+                  <span class="tiny">AGENT PICKER</span
                   ><span class="specimen-num">02</span>
                 </div>
-                <h3>Your agent.<br />Your way.</h3>
+                <h3>Add a<br />theme switcher</h3>
                 <div
                   class="agent-options"
                   role="group"
@@ -265,13 +250,13 @@
               </div>
               <div class="caption">
                 <div>
-                  <h3>The personal invitation</h3>
-                  <p>A name, a mark, a clear choice.</p>
+                  <h3>Agent picker</h3>
+                  <p>Show the selected agent on the copy button.</p>
                 </div>
                 <button
                   class="inspect"
                   data-inspect="theme"
-                  aria-label="View prompt for The personal invitation"
+                  aria-label="View prompt for Agent picker"
                 >
                   <svg class="i" aria-hidden="true">
                     <use href="#arrow-up-right" />
@@ -282,26 +267,26 @@
             <article class="exhibit" data-kind="copy" id="format-03">
               <div class="scene sky">
                 <div class="scene-top">
-                  <span class="tiny">RIGHT WHERE YOU NEED IT</span
+                  <span class="tiny">PROMPT BESIDE A FORM</span
                   ><span class="specimen-num">03</span>
                 </div>
                 <div class="mini-app">
                   <div class="mini-toolbar">
                     <span class="window-dots" aria-hidden="true"
                       ><i></i><i></i><i></i></span
-                    ><span>newsletter.form</span
+                    ><span>Newsletter preview</span
                     ><svg class="i" aria-hidden="true">
                       <use href="#check" />
                     </svg>
                   </div>
                   <div class="mini-form">
-                    <span class="mini-badge">THE OCCASIONAL EMAIL</span>
-                    <h3>Good things.<br />In your inbox.</h3>
+                    <span class="mini-badge">PROJECT UPDATES</span>
+                    <h3>Get project<br />updates</h3>
                     <div class="mock-input">
-                      you@somewhere.nice <span>Enter</span>
+                      you@example.com <span>Enter</span>
                     </div>
                     <div class="mock-submit">
-                      Keep me in the loop
+                      Subscribe
                       <svg class="i" aria-hidden="true">
                         <use href="#arrow-up-right" />
                       </svg>
@@ -309,7 +294,7 @@
                   </div>
                 </div>
                 <div class="context-action">
-                  <span><span class="ready-dot"></span> Make it yours</span
+                  <span><span class="ready-dot"></span> Add this form</span
                   ><button
                     data-copy="newsletter"
                     aria-label="Copy newsletter prompt for Cursor"
@@ -325,13 +310,13 @@
               </div>
               <div class="caption">
                 <div>
-                  <h3>The perfect moment</h3>
-                  <p>The next step lives beside the work.</p>
+                  <h3>Contextual prompt</h3>
+                  <p>Place the prompt beside the feature it adds.</p>
                 </div>
                 <button
                   class="inspect"
                   data-inspect="newsletter"
-                  aria-label="View prompt for The perfect moment"
+                  aria-label="View prompt for Contextual prompt"
                 >
                   <svg class="i" aria-hidden="true">
                     <use href="#arrow-up-right" />
@@ -342,36 +327,36 @@
             <article class="exhibit" data-kind="copy" id="format-04">
               <div class="scene terminal">
                 <div class="scene-top">
-                  <span class="tiny">FOR THE KEYBOARD PEOPLE</span
+                  <span class="tiny">KEYBOARD SEARCH</span
                   ><span class="specimen-num">04</span>
                 </div>
                 <div class="terminal-intro">
                   <span class="terminal-caret">&gt;_</span>
-                  <h3>Less ceremony.<br />More momentum.</h3>
+                  <h3>Find a prompt</h3>
                 </div>
                 <button class="palette-preview" id="open-palette">
                   <span class="palette-search"
                     ><svg class="i" aria-hidden="true">
                       <use href="#search" />
                     </svg>
-                    What do you want to make? <kbd>Cmd K</kbd></span
+                    Search prompts <kbd>Cmd K</kbd></span
                   ><span class="palette-result"
                     ><img src="/brands/claude.svg" alt="" />Add a contact form
                     <span>Enter</span></span
                   ><span class="palette-preview-footer"
-                    >A small action. A clear destination.</span
+                    >Choose a task to copy its prompt.</span
                   >
                 </button>
               </div>
               <div class="caption">
                 <div>
-                  <h3>The quick command</h3>
-                  <p>One shortcut from intention to action.</p>
+                  <h3>Command palette</h3>
+                  <p>Search tasks with Cmd or Ctrl + K.</p>
                 </div>
                 <button
                   class="inspect"
                   data-inspect="contact"
-                  aria-label="View prompt for The quick command"
+                  aria-label="View prompt for Command palette"
                 >
                   <svg class="i" aria-hidden="true">
                     <use href="#arrow-up-right" />
@@ -382,13 +367,13 @@
             <article class="exhibit" data-kind="copy" id="format-05">
               <div class="scene orange-scene">
                 <div class="scene-top">
-                  <span class="tiny">THE PROMPT IS THE POINTER</span
+                  <span class="tiny">GUIDE LINK</span
                   ><span class="specimen-num">05</span>
                 </div>
                 <div class="big-one">1</div>
-                <h3>sentence.<br />A whole lot behind it.</h3>
+                <h3>sentence links<br />to the full guide</h3>
                 <button class="line-copy" data-copy="contact">
-                  <span class="copy-label">Read the guide. Build the form.</span
+                  <span class="copy-label">Copy contact form prompt</span
                   ><svg class="i" aria-hidden="true">
                     <use href="#copy" />
                   </svg></button
@@ -397,20 +382,20 @@
                   href="/guides/contact-form.md"
                   target="_blank"
                   rel="noreferrer"
-                  >See what’s behind the prompt
+                  >Read the contact form guide
                   <svg class="i" aria-hidden="true">
                     <use href="#arrow-up-right" /></svg
                 ></a>
               </div>
               <div class="caption">
                 <div>
-                  <h3>The tiny starting point</h3>
-                  <p>Keep the directions. Lose the wall.</p>
+                  <h3>Linked guide</h3>
+                  <p>Keep the full instructions at the URL in the prompt.</p>
                 </div>
                 <button
                   class="inspect"
                   data-inspect="contact"
-                  aria-label="View prompt for The tiny starting point"
+                  aria-label="View prompt for Linked guide"
                 >
                   <svg class="i" aria-hidden="true">
                     <use href="#arrow-up-right" />
@@ -421,7 +406,7 @@
             <article class="exhibit" data-kind="launch" id="format-06">
               <div class="scene midnight">
                 <div class="scene-top">
-                  <span class="tiny">FROM THIS TAB TO YOUR TOOL</span
+                  <span class="tiny">DRAFT LINK</span
                   ><span class="specimen-num">06</span>
                 </div>
                 <div class="orbit" aria-hidden="true">
@@ -432,7 +417,7 @@
                   <i class="orbit-dot"></i>
                 </div>
                 <div class="launch-content">
-                  <h3>Your next move.</h3>
+                  <h3>Start in Cursor</h3>
                   <div class="launch-actions">
                     <a
                       id="cursor-launch"
@@ -455,19 +440,19 @@
                     </button>
                   </div>
                   <span class="scene-hint"
-                    >Opens a draft. You decide when to run.</span
+                    >Review the draft in Cursor before running it.</span
                   >
                 </div>
               </div>
               <div class="caption">
                 <div>
-                  <h3>The direct route</h3>
-                  <p>A familiar tool. One less step.</p>
+                  <h3>Open in agent</h3>
+                  <p>Open the contact form prompt as a Cursor draft.</p>
                 </div>
                 <button
                   class="inspect"
                   data-inspect="contact"
-                  aria-label="View prompt for The direct route"
+                  aria-label="View prompt for Open in agent"
                 >
                   <svg class="i" aria-hidden="true">
                     <use href="#arrow-up-right" />
@@ -483,15 +468,13 @@
               <div class="scene continuation">
                 <div class="continuation-copy">
                   <div class="scene-top">
-                    <span class="tiny">PICK UP WHERE YOU LEFT OFF</span
+                    <span class="tiny">EXISTING PROJECT</span
                     ><span class="specimen-num">07</span>
                   </div>
-                  <h3>Continue this project.</h3>
-                  <p>New chat. Different agent. Same next step.</p>
+                  <h3>Continue this project</h3>
                   <p class="continuation-description">
-                    A short prompt reconnects your agent with the project's
-                    current handoff. Verify what changed, continue the next
-                    task, and leave a clear place to resume.
+                    Ask your agent to check the current files, continue the next
+                    unfinished task, and update the project handoff.
                   </p>
                   <button
                     class="hero-copy continuation-button"
@@ -524,16 +507,18 @@
                   <h4>Contact form</h4>
                   <dl>
                     <div>
-                      <dt>Last checkpoint</dt>
-                      <dd>Fields and responsive layout in place.</dd>
+                      <dt>Completed</dt>
+                      <dd>
+                        The form fields and responsive layout are in place.
+                      </dd>
                     </div>
                     <div>
                       <dt>Next task</dt>
                       <dd>Add validation and preserve input on errors.</dd>
                     </div>
                     <div>
-                      <dt>Verify first</dt>
-                      <dd>Inspect the files. Confirm the current state.</dd>
+                      <dt>Before starting</dt>
+                      <dd>Check that the current files match this handoff.</dd>
                     </div>
                   </dl>
                   <a
@@ -548,11 +533,8 @@
               </div>
               <div class="caption">
                 <div>
-                  <h3>The next chapter</h3>
-                  <p>
-                    Your project keeps its place, even when the conversation
-                    changes.
-                  </p>
+                  <h3>Project continuation</h3>
+                  <p>Leave an updated handoff for the next session.</p>
                 </div>
                 <button
                   class="inspect"
@@ -567,13 +549,9 @@
             </article>
           </div>
           <div class="playground-note">
-            <span class="tiny">YES, THESE WORK.</span>
-            <p>
-              Copy a prompt, inspect it, or open a draft. Each demo points to a
-              short public guide you can read first.
-            </p>
+            <p>Use the arrow beside an example to inspect its prompt.</p>
             <button id="show-payload">
-              What actually gets copied?
+              View the build prompt
               <svg class="i" aria-hidden="true">
                 <use href="#arrow-up-right" />
               </svg>
@@ -582,15 +560,10 @@
         </section>
         <section class="pointer-section wrap" aria-labelledby="pointer-title">
           <div class="pointer-heading">
-            <span class="tiny">THE IDEA UNDERNEATH</span>
-            <h2 id="pointer-title">
-              A small invitation.<br /><span>A well-prepared destination.</span>
-            </h2>
+            <h2 id="pointer-title">How the prompt works</h2>
             <p>
-              The button stays small because the instructions<br
-                class="desktop-break"
-              />
-              have somewhere useful to live.
+              The copied sentence tells your agent which guide to read and what
+              to build.
             </p>
           </div>
           <div
@@ -604,7 +577,7 @@
                   <path
                     d="M12 56v-4c0-11 9-18 20-18s20 7 20 18v4"
                   /></svg></span
-              ><span>You</span><small>A clear intention</small>
+              ><span>You</span><small>Choose a task</small>
             </div>
             <svg class="i diagram-arrow" aria-hidden="true">
               <use href="#arrow-right" /></svg
@@ -623,7 +596,7 @@
               rel="noreferrer"
               ><span class="diagram-visual guide-visual"
                 ><span>GUIDE.md</span><i></i><i></i><i></i></span
-              ><span>The guide</span><small>Context, scope, checks</small></a
+              ><span>The guide</span><small>Full task instructions</small></a
             ><svg class="i diagram-arrow" aria-hidden="true">
               <use href="#arrow-right" />
             </svg>
@@ -632,7 +605,7 @@
                 ><img src="/brands/claude.svg" alt="" /><img
                   src="/brands/codex.svg"
                   alt="" /><img src="/brands/cursor.svg" alt="" /></span
-              ><span>Your agent</span><small>Ready to do the work</small>
+              ><span>Your agent</span><small>Build in your project</small>
             </div>
           </div>
         </section>
@@ -643,14 +616,10 @@
         >
           <div class="section-heading">
             <div>
-              <span class="tiny section-kicker">OBSERVED IN THE WILD</span>
-              <h2 id="notes-title">
-                Small interfaces.<br />Different payloads.
-              </h2>
+              <h2 id="notes-title">Prompts on other sites</h2>
             </div>
             <p class="notes-intro">
-              Four real sites. Four useful lessons.<br />Measured clipboard
-              text, not marketing promises.
+              Clipboard samples from Cloudflare, Arg, Resend, and Mintlify.
             </p>
           </div>
           <div class="research-grid">
@@ -668,10 +637,7 @@
               ></span>
               <div class="research-count">135<span>characters</span></div>
               <span class="research-words">14 WORDS · SETUP PROMPT</span>
-              <p>
-                Recognizable logos. One small button. The full setup lives
-                behind a link.
-              </p>
+              <p>A setup prompt with a link to the full instructions.</p>
               <div class="mini-meter"><i style="width: 1.36%"></i></div></a
             ><a
               class="research-item"
@@ -687,10 +653,7 @@
               ></span>
               <div class="research-count">31<span>characters</span></div>
               <span class="research-words">2 WORDS · SETUP PROMPT</span>
-              <p>
-                A tiny fetch instruction. A complete setup guide at the other
-                end.
-              </p>
+              <p>The copied command fetches the setup guide.</p>
               <div class="mini-meter"><i style="width: 0.31%"></i></div></a
             ><a
               class="research-item"
@@ -706,10 +669,7 @@
               ></span>
               <div class="research-count">51<span>characters</span></div>
               <span class="research-words">11 WORDS · FIRST TASK PROMPT</span>
-              <p>
-                A short task, with copy and Cursor launch actions right beside
-                it.
-              </p>
+              <p>A task prompt with copy and Open in Cursor actions.</p>
               <div class="mini-meter"><i style="width: 0.51%"></i></div></a
             ><a
               class="research-item"
@@ -725,27 +685,22 @@
               ></span>
               <div class="research-count">9,928<span>characters</span></div>
               <span class="research-words">1,301 WORDS · FULL PAGE EXPORT</span>
-              <p>
-                A compact menu can still copy a lot. “Copy page” and “Copy
-                prompt” do different jobs.
-              </p>
+              <p>The menu copies the full documentation page.</p>
               <div class="mini-meter full"><i style="width: 100%"></i></div
             ></a>
           </div>
           <div class="research-footnote">
             <span>OBSERVED OCT 14, 2026</span>
             <p>
-              These are specific samples, not rankings. Setup prompts and
-              full-page exports serve different purposes. The formats above are
-              independent design studies, not official integrations.
+              These measurements describe the samples collected on that date.
+              The examples here are independent implementations.
             </p>
-            <span>SOURCES ABOVE</span>
           </div>
         </section>
         <section class="closing wrap">
-          <h2>Give the work<br />a good beginning.</h2>
+          <h2>Choose an example for your site</h2>
           <a href="#formats"
-            >Find your favorite format
+            >Back to the examples
             <svg class="i" aria-hidden="true"><use href="#arrow-up" /></svg
           ></a>
         </section>
@@ -753,7 +708,7 @@
       <footer class="wrap">
         <a class="wordmark" href="#" aria-label="Agent Prompts home"
           >agent prompts</a
-        ><span>An independent collection of agent handoffs.</span
+        ><span>An independent interface reference.</span
         ><span
           ><a href="https://github.com/devin-thomas/agent-prompts">Source</a> ·
           <a href="/LICENSE.txt">MIT licensed</a></span
@@ -768,14 +723,13 @@
       aria-describedby="prompt-description"
     >
       <div class="dialog-head">
-        <span class="tiny">THE WHOLE PROMPT</span
-        ><button class="close-dialog icon-button" aria-label="Close prompt">
+        <button class="close-dialog icon-button" aria-label="Close prompt">
           <svg class="i" aria-hidden="true"><use href="#close" /></svg>
         </button>
       </div>
-      <h2 id="prompt-title">A small starting point.</h2>
+      <h2 id="prompt-title">Prompt preview</h2>
       <p class="dialog-description" id="prompt-description">
-        This is exactly what goes on your clipboard.
+        This is the text the button copies.
       </p>
       <textarea
         id="prompt-text"
@@ -791,7 +745,7 @@
       </div>
       <div class="dialog-actions">
         <span class="manual-hint" id="manual-hint"
-          >Paste into your agent, in your project.</span
+          >Paste into your coding agent.</span
         ><button class="dialog-copy" id="dialog-copy">
           <span class="copy-label">Copy prompt</span
           ><svg class="i" aria-hidden="true"><use href="#copy" /></svg>
@@ -815,7 +769,7 @@
           id="palette-query"
           aria-label="Search prompts"
           aria-controls="palette-results"
-          placeholder="What do you want to make?"
+          placeholder="Search prompts"
           autocomplete="off"
         /><button class="close-palette" aria-label="Close command palette">
           <kbd>ESC</kbd>
@@ -827,8 +781,7 @@
         aria-label="Matching prompts"
       ></div>
       <div class="palette-foot">
-        <span>Arrow keys to choose</span><span>Enter to copy</span
-        ><span>Short prompts. Real guides.</span>
+        <span>Arrow keys to choose</span><span>Enter to copy</span>
       </div>
     </dialog>
     <dialog
@@ -837,11 +790,7 @@
       aria-labelledby="share-title"
     >
       <div class="dialog-head">
-        <span class="tiny">SHARE THE COLLECTION</span
-        ><button
-          class="close-share icon-button"
-          aria-label="Close share dialog"
-        >
+        <button class="close-share icon-button" aria-label="Close share dialog">
           <svg class="i" aria-hidden="true"><use href="#close" /></svg>
         </button>
       </div>
