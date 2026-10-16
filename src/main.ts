@@ -1,8 +1,8 @@
 import './style.css';
 
 type TaskId = 'reference' | 'contact' | 'theme' | 'newsletter' | 'continue';
-type AgentId = 'claude' | 'codex' | 'cursor';
-type AgentName = 'Claude Code' | 'Codex' | 'Cursor';
+type AgentId = 'claude-code' | 'codex' | 'cursor' | 'grok-bot';
+type AgentName = 'Claude Code' | 'Codex' | 'Antigravity';
 type Filter = 'all' | 'copy' | 'launch';
 type Task = { name: string; guide: string; outcome: string; agent: AgentId };
 
@@ -17,7 +17,7 @@ const tasks: Record<TaskId, Task> = {
     name: 'Add a contact form',
     guide: 'contact-form',
     outcome: 'add an accessible contact form to this project',
-    agent: 'claude',
+    agent: 'claude-code',
   },
   theme: {
     name: 'Add a theme switcher',
@@ -29,7 +29,7 @@ const tasks: Record<TaskId, Task> = {
     name: 'Add a newsletter form',
     guide: 'newsletter-form',
     outcome: 'add an accessible newsletter signup form',
-    agent: 'cursor',
+    agent: 'grok-bot',
   },
   continue: {
     name: 'Continue this project',
@@ -38,10 +38,11 @@ const tasks: Record<TaskId, Task> = {
     agent: 'codex',
   },
 };
-const agentNames: Record<AgentId, AgentName> = {
-  claude: 'Claude Code',
+const agentNames: Record<AgentId, string> = {
+  'claude-code': 'Claude Code',
   codex: 'Codex',
   cursor: 'Cursor',
+  'grok-bot': 'Grok Bot',
 };
 const promptFor = (id: TaskId): string =>
   `Read ${location.origin}/guides/${tasks[id].guide}.md and ${tasks[id].outcome}, following its scope and verification steps.`;
@@ -53,7 +54,7 @@ const $ = <T extends Element = HTMLElement>(selector: string): T => {
 const isTaskId = (value: string | undefined): value is TaskId =>
   value !== undefined && Object.hasOwn(tasks, value);
 const isAgentName = (value: string | undefined): value is AgentName =>
-  value === 'Claude Code' || value === 'Codex' || value === 'Cursor';
+  value === 'Claude Code' || value === 'Codex' || value === 'Antigravity';
 const isFilter = (value: string | undefined): value is Filter =>
   value === 'all' || value === 'copy' || value === 'launch';
 const dialog = $<HTMLDialogElement>('#prompt-dialog');
@@ -255,7 +256,7 @@ function renderPalette(): void {
     button.className = 'palette-row';
     button.setAttribute('aria-label', `Copy prompt: ${tasks[id].name}`);
     const image = document.createElement('img');
-    image.src = `/brands/${tasks[id].agent}.svg`;
+    image.src = `/brands/${tasks[id].agent}-white.svg`;
     image.alt = '';
     const name = document.createElement('span');
     name.textContent = tasks[id].name;
@@ -359,4 +360,36 @@ $('#share').addEventListener('click', async () => {
   }
   await copyShareLink();
 });
+
+// These controls compare artwork only; they never change a copied prompt.
+type LogoTreatment = 'original' | 'black' | 'white';
+const isLogoTreatment = (value: string | undefined): value is LogoTreatment =>
+  value === 'original' || value === 'black' || value === 'white';
+document
+  .querySelectorAll<HTMLButtonElement>('[data-treatment]')
+  .forEach((button) => {
+    button.addEventListener('click', () => {
+      const treatment = button.dataset.treatment;
+      if (!isLogoTreatment(treatment)) return;
+      document
+        .querySelectorAll<HTMLButtonElement>('[data-treatment]')
+        .forEach((choice) => {
+          choice.setAttribute('aria-pressed', String(choice === button));
+        });
+      $('#brand-grid').dataset.logoTreatment = treatment;
+      document
+        .querySelectorAll<HTMLImageElement>('[data-brand-mark]')
+        .forEach((image) => {
+          image.src = `/brands/${image.dataset.brandMark}-${treatment}.svg`;
+        });
+      document
+        .querySelectorAll<HTMLImageElement>('.swatch-ground')
+        .forEach((image) => {
+          image.src = `/brands/plate-${treatment === 'white' ? 'dark' : 'light'}.svg`;
+        });
+      $('#treatment-status').textContent =
+        `${button.textContent?.trim()} logos shown for all nine products.`;
+    });
+  });
+
 document.documentElement.dataset.appReady = 'true';

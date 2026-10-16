@@ -23,12 +23,12 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image"
-      content="https://agent-prompts.vercel.app/og.jpg?v=1.2.1"
+      content="https://agent-prompts.vercel.app/og.jpg?v=1.3.0"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://agent-prompts.vercel.app/og.jpg?v=1.2.1"
+      content="https://agent-prompts.vercel.app/og.jpg?v=1.3.0"
     />
     <meta property="og:url" content="https://agent-prompts.vercel.app/" />
     <link rel="canonical" href="https://agent-prompts.vercel.app/" />
@@ -108,7 +108,7 @@
                 aria-label="Copy prompt to build a branded agent handoff on your site"
               >
                 <span class="hero-logo-cluster" aria-hidden="true"
-                  ><img src="/brands/claude.svg" alt="" /><img
+                  ><img src="/brands/claude-code.svg" alt="" /><img
                     src="/brands/codex.svg"
                     alt="" /><img src="/brands/cursor.svg" alt="" /></span
                 ><span class="copy-label">Copy build prompt</span
@@ -131,11 +131,23 @@
           </div>
         </section>
         <div class="agent-strip wrap">
-          <span class="tiny">PROMPTS FOR</span>
+          <span class="tiny">PRODUCTS IN THE EXAMPLES</span>
           <div class="agent-strip-brands">
-            <span><img src="/brands/claude.svg" alt="" />Claude Code</span
-            ><span><img src="/brands/codex.svg" alt="" />Codex</span
-            ><span><img src="/brands/cursor.svg" alt="" />Cursor</span>
+            <span><img src="/brands/chatgpt-white.svg" alt="" />ChatGPT</span
+            ><span><img src="/brands/claude-white.svg" alt="" />Claude</span
+            ><span><img src="/brands/gemini-white.svg" alt="" />Gemini</span
+            ><span
+              ><img src="/brands/claude-code-white.svg" alt="" />Claude
+              Code</span
+            ><span><img src="/brands/codex-white.svg" alt="" />Codex</span
+            ><span><img src="/brands/cursor-white.svg" alt="" />Cursor</span
+            ><span
+              ><img
+                src="/brands/antigravity-white.svg"
+                alt=""
+              />Antigravity</span
+            ><span><img src="/brands/grok-bot-white.svg" alt="" />Grok Bot</span
+            ><span><img src="/brands/grok-white.svg" alt="" />Grok</span>
           </div>
         </div>
         <section
@@ -174,24 +186,31 @@
                 <button
                   class="pill-copy"
                   data-copy="contact"
-                  aria-label="Copy contact form prompt for Claude Code, Codex, or Cursor"
+                  aria-label="Copy contact form prompt for ChatGPT, Claude, or Gemini"
                 >
                   <span class="logo-cluster" aria-hidden="true"
-                    ><img src="/brands/claude.svg" alt="" /><img
-                      src="/brands/codex.svg"
-                      alt="" /><img src="/brands/cursor.svg" alt="" /></span
+                    ><img
+                      class="adaptive-mono"
+                      src="/brands/chatgpt-black.svg"
+                      alt="" /><img
+                      src="/brands/claude-original.svg"
+                      alt="" /><img
+                      src="/brands/gemini-original.svg"
+                      alt="" /></span
                   ><span class="copy-label">Copy prompt</span
                   ><svg class="i" aria-hidden="true">
                     <use href="#copy" />
                   </svg></button
                 ><span class="scene-hint"
-                  >Paste into Claude Code, Codex, or Cursor.</span
+                  >Paste into ChatGPT, Claude, or Gemini.</span
                 >
               </div>
               <div class="caption">
                 <div>
                   <h3>Shared prompt</h3>
-                  <p>One button copies a prompt for any supported agent.</p>
+                  <p>
+                    Share one prompt across tools with access to your project.
+                  </p>
                 </div>
                 <button
                   class="inspect"
@@ -221,7 +240,7 @@
                     aria-pressed="true"
                     class="agent-option selected"
                   >
-                    <img src="/brands/claude.svg" alt="" /><span
+                    <img src="/brands/claude-code-original.svg" alt="" /><span
                       >Claude Code</span
                     ><span class="radio-dot"></span></button
                   ><button
@@ -229,14 +248,16 @@
                     aria-pressed="false"
                     class="agent-option"
                   >
-                    <img src="/brands/codex.svg" alt="" /><span>Codex</span
+                    <img src="/brands/codex-original.svg" alt="" /><span
+                      >Codex</span
                     ><span class="radio-dot"></span></button
                   ><button
-                    data-agent="Cursor"
+                    data-agent="Antigravity"
                     aria-pressed="false"
                     class="agent-option"
                   >
-                    <img src="/brands/cursor.svg" alt="" /><span>Cursor</span
+                    <img src="/brands/antigravity-original.svg" alt="" /><span
+                      >Antigravity</span
                     ><span class="radio-dot"></span>
                   </button>
                 </div>
@@ -297,11 +318,13 @@
                   <span><span class="ready-dot"></span> Add this form</span
                   ><button
                     data-copy="newsletter"
-                    aria-label="Copy newsletter prompt for Cursor"
+                    aria-label="Copy newsletter prompt for Grok Bot"
                   >
-                    <img src="/brands/cursor.svg" alt="" /><span
-                      class="copy-label"
-                      >Copy for Cursor</span
+                    <img
+                      class="adaptive-mono"
+                      src="/brands/grok-bot-black.svg"
+                      alt=""
+                    /><span class="copy-label">Copy for Grok Bot</span
                     ><svg class="i" aria-hidden="true">
                       <use href="#copy" />
                     </svg>
@@ -341,8 +364,8 @@
                     </svg>
                     Search prompts <kbd>Cmd K</kbd></span
                   ><span class="palette-result"
-                    ><img src="/brands/claude.svg" alt="" />Add a contact form
-                    <span>Enter</span></span
+                    ><img src="/brands/claude-code.svg" alt="" />Add a contact
+                    form <span>Enter</span></span
                   ><span class="palette-preview-footer"
                     >Choose a task to copy its prompt.</span
                   >
@@ -373,7 +396,11 @@
                 <div class="big-one">1</div>
                 <h3>sentence links<br />to the full guide</h3>
                 <button class="line-copy" data-copy="contact">
-                  <span class="copy-label">Copy contact form prompt</span
+                  <img
+                    class="adaptive-mono"
+                    src="/brands/grok-black.svg"
+                    alt=""
+                  /><span class="copy-label">Copy for Grok</span
                   ><svg class="i" aria-hidden="true">
                     <use href="#copy" />
                   </svg></button
@@ -482,7 +509,7 @@
                     aria-label="Copy continuation prompt for Claude Code, Codex, or Cursor"
                   >
                     <span class="hero-logo-cluster" aria-hidden="true"
-                      ><img src="/brands/claude.svg" alt="" /><img
+                      ><img src="/brands/claude-code.svg" alt="" /><img
                         src="/brands/codex.svg"
                         alt="" /><img src="/brands/cursor.svg" alt="" /></span
                     ><span class="copy-label">Continue this project</span
@@ -558,6 +585,161 @@
             </button>
           </div>
         </section>
+        <section
+          class="brand-studio wrap"
+          id="logo-treatments"
+          aria-labelledby="brands-title"
+        >
+          <div class="section-heading">
+            <div>
+              <h2 id="brands-title">Logo treatments</h2>
+              <p class="brand-intro">
+                Compare the same marks in their original palette, black, or
+                white.
+              </p>
+            </div>
+            <div
+              class="treatment-controls"
+              role="group"
+              aria-label="Logo treatment"
+            >
+              <button data-treatment="original" aria-pressed="true">
+                Original</button
+              ><button data-treatment="black" aria-pressed="false">Black</button
+              ><button data-treatment="white" aria-pressed="false">
+                White
+              </button>
+            </div>
+          </div>
+          <div
+            class="brand-grid"
+            id="brand-grid"
+            data-logo-treatment="original"
+          >
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="chatgpt"
+                  src="/brands/chatgpt-original.svg"
+                  alt="" /></span
+              ><span>ChatGPT</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="claude"
+                  src="/brands/claude-original.svg"
+                  alt="" /></span
+              ><span>Claude</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="gemini"
+                  src="/brands/gemini-original.svg"
+                  alt="" /></span
+              ><span>Gemini</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="claude-code"
+                  src="/brands/claude-code-original.svg"
+                  alt="" /></span
+              ><span>Claude Code</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="codex"
+                  src="/brands/codex-original.svg"
+                  alt="" /></span
+              ><span>Codex</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="cursor"
+                  src="/brands/cursor-original.svg"
+                  alt="" /></span
+              ><span>Cursor</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="antigravity"
+                  src="/brands/antigravity-original.svg"
+                  alt="" /></span
+              ><span>Antigravity</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="grok-bot"
+                  src="/brands/grok-bot-original.svg"
+                  alt="" /></span
+              ><span>Grok Bot</span>
+            </div>
+            <div class="brand-sample">
+              <span class="brand-swatch" aria-hidden="true"
+                ><img
+                  class="swatch-ground"
+                  src="/brands/plate-light.svg"
+                  alt="" /><img
+                  class="brand-mark"
+                  data-brand-mark="grok"
+                  src="/brands/grok-original.svg"
+                  alt="" /></span
+              ><span>Grok</span>
+            </div>
+          </div>
+          <p class="brand-footnote">
+            ChatGPT, Cursor, Grok Bot, and Grok have monochrome originals.
+            <a href="/brands/credits.txt" target="_blank" rel="noreferrer"
+              >Artwork sources and notices</a
+            >
+          </p>
+          <p
+            class="sr-only"
+            id="treatment-status"
+            role="status"
+            aria-live="polite"
+          >
+            Original logos shown for all nine products.
+          </p>
+        </section>
         <section class="pointer-section wrap" aria-labelledby="pointer-title">
           <div class="pointer-heading">
             <h2 id="pointer-title">How the prompt works</h2>
@@ -602,7 +784,7 @@
             </svg>
             <div class="diagram-node">
               <span class="diagram-visual agents-visual"
-                ><img src="/brands/claude.svg" alt="" /><img
+                ><img src="/brands/claude-code.svg" alt="" /><img
                   src="/brands/codex.svg"
                   alt="" /><img src="/brands/cursor.svg" alt="" /></span
               ><span>Your agent</span><small>Build in your project</small>

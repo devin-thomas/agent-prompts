@@ -477,9 +477,6 @@ h1 > span:first-of-type {
   width: 19px;
   height: 19px;
 }
-.logo-cluster img:first-child {
-  filter: invert(49%) sepia(51%) saturate(698%) hue-rotate(328deg);
-}
 .scene-hint {
   font: 9px var(--label-font);
   opacity: 0.6;
@@ -2537,7 +2534,7 @@ dialog::backdrop {
 }
 
 /* Dark Reader darkens the pale specimen panels without recoloring external logo SVGs.
-   Give every logo inside their actions a light silhouette and keep the first card neutral. */
+   Use light silhouettes for monochrome marks while preserving original color artwork. */
 :root[data-darkreader-scheme='dark'] .scene.cream {
   background: #24242a;
   color: #f0efeb;
@@ -2547,9 +2544,7 @@ dialog::backdrop {
   color: #faf7ff;
   border-color: #806d96;
 }
-:root[data-darkreader-scheme='dark'] .pill-copy .logo-cluster img,
-:root[data-darkreader-scheme='dark'] .agent-option img,
-:root[data-darkreader-scheme='dark'] .context-action img,
+:root[data-darkreader-scheme='dark'] .adaptive-mono,
 :root[data-darkreader-scheme='dark'] .cursor-launch img {
   filter: brightness(0) invert(1);
 }
@@ -2873,4 +2868,163 @@ footer > span:last-child a {
 
 .dialog-head > .icon-button {
   margin-left: auto;
+}
+
+/* Product marks wrap independently of the opening prompt action. */
+.agent-strip {
+  align-items: flex-start;
+}
+.agent-strip > .tiny {
+  flex: 0 0 106px;
+  line-height: 1.7;
+}
+.agent-strip-brands {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 18px 27px;
+}
+.agent-strip-brands > span {
+  white-space: nowrap;
+}
+.line-copy > img {
+  width: 20px;
+  height: 20px;
+}
+.line-copy .copy-label {
+  flex: 1;
+}
+.brand-studio {
+  padding-block: 64px;
+  border-top: 1px solid #363635;
+}
+.brand-studio .section-heading {
+  gap: 24px;
+  align-items: flex-start;
+}
+.brand-intro {
+  margin-top: 12px;
+  max-width: 460px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a5a5a0;
+}
+.treatment-controls {
+  display: flex;
+  padding: 4px;
+  border: 1px solid #454543;
+  border-radius: 9px;
+  gap: 3px;
+}
+.treatment-controls button {
+  min-height: 40px;
+  padding: 9px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #c2c1bb;
+}
+.treatment-controls button:hover {
+  background: #292929;
+}
+.treatment-controls button[aria-pressed='true'] {
+  outline: 1px solid #ac95cf;
+  outline-offset: -1px;
+  background: #eceae3;
+  color: #161616;
+}
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 24px 12px;
+  margin-top: 32px;
+}
+.brand-sample {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.brand-swatch {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #80808050;
+}
+.swatch-ground {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.brand-mark {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.brand-footnote {
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #a5a5a0;
+}
+.brand-footnote a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 1050px) {
+  .brand-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .agent-strip > .tiny {
+    margin-bottom: 14px;
+  }
+  .agent-strip-brands {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 17px 10px;
+    margin-top: 0;
+  }
+  .agent-strip-brands > span {
+    font-size: 10px;
+    gap: 6px;
+  }
+  .agent-strip-brands img {
+    width: 15px;
+    height: 15px;
+  }
+  .brand-studio {
+    padding-block: 40px;
+  }
+  .brand-studio .section-heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .brand-intro {
+    font-size: 13px;
+  }
+  .brand-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 10px;
+  }
+  .brand-sample {
+    font-size: 11px;
+  }
+  .brand-swatch {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.context-action img {
+  width: 18px;
+  height: 18px;
 }

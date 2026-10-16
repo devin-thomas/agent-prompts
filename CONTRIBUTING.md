@@ -15,7 +15,8 @@ Check a fresh production build with `npm run preview`:
 3. Deny clipboard access and check selectable-text recovery. Repeated share failures should reuse a single recovery dialog.
 4. Exercise every filter and agent choice. Open all dialogs and use Tab, arrow keys, Enter, and Escape. Check focus return, empty search results, and status announcements.
 5. Check reduced motion and an actual Dark Reader extension transformation. Inspect the light gallery controls, product marks, continuation example, and open dialogs. A dark site alone does not prove extension compatibility.
-6. Read the continuation guide as a new visitor. It should explain how to verify an existing handoff and leave a useful next step without requiring a particular tool or account.
+6. Switch the logo comparison through Original, Black, and White, including by keyboard. Confirm all nine assets load, original colors remain intact, and black and white marks keep their cutouts and contrast with Dark Reader enabled.
+7. Read the continuation guide as a new visitor. It should explain how to verify an existing handoff and leave a useful next step without requiring a particular tool or account.
 
 Keep raw browser profiles, logs, and capture evidence outside the source tree. A passing build does not replace visual review.
 

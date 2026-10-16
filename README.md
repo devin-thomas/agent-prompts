@@ -18,6 +18,12 @@ Agent Prompts shows seven ways to add a coding agent prompt to a website. Each e
 
 The continuation example works with project records already available to the agent. It does not require an account or a particular agent tool. See its [public guide](public/guides/continue-project.md) and [fictional handoff example](public/examples/project-handoff.md).
 
+## Product artwork
+
+The examples use nine distinct product marks: ChatGPT, Claude, Gemini, Claude Code, Codex, Cursor, Antigravity, Grok Bot, and Grok. The logo comparison lets you switch between original, black, and white SVG variants. Some products have monochrome originals. Choosing a logo treatment changes only the artwork preview, not a copied task or its destination.
+
+Give the tool access to the project before using a task prompt. A logo identifies the intended tool; it does not establish a connection or grant access.
+
 ## Development
 
 Use Node.js 24 LTS and npm.
