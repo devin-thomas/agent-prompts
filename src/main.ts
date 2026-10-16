@@ -67,6 +67,18 @@ document.querySelectorAll<HTMLElement>('.copy-label').forEach((label) => {
   copyLabels.set(label, label.textContent ?? 'Copy prompt');
 });
 
+function resetCopyFeedback(button?: HTMLButtonElement): HTMLElement | null {
+  const label = button?.querySelector<HTMLElement>('.copy-label') ?? null;
+  if (label) {
+    delete label.dataset.copyToken;
+    label.textContent =
+      button?.dataset.copy === 'theme'
+        ? `Copy for ${selectedAgent}`
+        : (copyLabels.get(label) ?? 'Copy prompt');
+  }
+  return label;
+}
+
 function announce(message: string): void {
   const toast = $('#toast');
   clearTimeout(toastTimer);
@@ -87,6 +99,7 @@ function inspect(id: TaskId, manual = false): void {
   $('#prompt-count').textContent =
     `${[...text].length} characters · ${text.trim().split(/\s+/).length} words`;
   $<HTMLAnchorElement>('#prompt-guide').href = `/guides/${tasks[id].guide}.md`;
+  resetCopyFeedback($<HTMLButtonElement>('#dialog-copy'));
   $('#dialog-status').textContent = '';
   $('#manual-hint').textContent = manual
     ? 'Clipboard unavailable. Select the prompt and copy it manually.'
@@ -102,26 +115,24 @@ function inspect(id: TaskId, manual = false): void {
 async function copy(id: TaskId, button?: HTMLButtonElement): Promise<boolean> {
   if (button?.disabled) return false;
   if (button) button.disabled = true;
+  const label = resetCopyFeedback(button);
+  const token = `${Date.now()}-${Math.random()}`;
+  if (label) label.dataset.copyToken = token;
   try {
     if (!navigator.clipboard?.writeText)
       throw new Error('Clipboard unavailable');
     await navigator.clipboard.writeText(promptFor(id));
     announce('Prompt copied. Continue in your agent.');
-    const label = button?.querySelector<HTMLElement>('.copy-label');
-    if (label) {
-      const token = `${Date.now()}-${Math.random()}`;
-      label.dataset.copyToken = token;
+    if (label?.dataset.copyToken === token) {
       label.textContent = 'Copied!';
       setTimeout(() => {
         if (label.dataset.copyToken !== token) return;
-        label.textContent =
-          button?.dataset.copy === 'theme'
-            ? `Copy for ${selectedAgent}`
-            : (copyLabels.get(label) ?? 'Copy prompt');
+        resetCopyFeedback(button);
       }, 1800);
     }
     return true;
   } catch {
+    if (label?.dataset.copyToken === token) resetCopyFeedback(button);
     inspect(id, true);
     announce(
       'Clipboard unavailable. The prompt is selected for manual copying.',
